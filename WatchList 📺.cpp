@@ -25,7 +25,7 @@ int main() {
         cout << "6. Exit\n";
         cout << "Enter choice: ";
         cin >> choice;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // buffer temizleme
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
         switch (choice) {
         case 1: {
@@ -38,11 +38,11 @@ int main() {
 
             cout << "Enter Year: ";
             cin >> m.year;
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // buffer temizleme
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
             cout << "Watched? (1 = Yes, 0 = No): ";
             cin >> m.watched;
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // buffer temizleme
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
             watchlist.push_back(m);
             cout << "Media added successfully!\n";
@@ -144,3 +144,4 @@ int main() {
 
     return 0;
 }
+
